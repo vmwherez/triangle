@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"options": {
+				"cwd": "${workspaceFolder}/build",
+				"env": {
+				  "PATH": "/usr/local/bin:/usr/bin:/bin:${workspaceFolder}/build" 
+				}
+			  },
+			"type": "shell",
+			"label": "build",
+			
+			"command":"cmake --build .",
+			"args": [
+			//   "--config",
+			//   "Debug"
+			]
+		  }
+	]
+}
